@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import logo from './assets/images/mustache.png';
 import './App.css';
-import quotes from './quotes.json';
-// import QuotesList from './components/standard/quotes-list';
-import QuotesList from './components/material-ui/quotes-list';
+
+import QuoteListContainer from './components/containers/quote-list-container';
 
 class App extends Component {
   render() {
@@ -16,7 +15,7 @@ class App extends Component {
         </header>
         <p className="App-intro">
         </p>
-        <QuotesList quotes={quotes} />
+        <QuoteListContainer />
       </div>
     );
   }
