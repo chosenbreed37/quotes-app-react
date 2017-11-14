@@ -10,7 +10,7 @@ export default class QuoteListContainer extends React.Component {
     }
 
     componentDidMount() {
-        rest.get('http://localhost:3000/quotes')
+        rest.get(this.props.apiUrl + '/quotes')
             .on('complete', (quotes) => {
                 this.setState({ quotes });
             })

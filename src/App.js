@@ -15,7 +15,7 @@ class App extends Component {
         </header>
         <p className="App-intro">
         </p>
-        <QuoteListContainer />
+        <QuoteListContainer apiUrl={this.props.config && this.props.config.api_url} />
       </div>
     );
   }

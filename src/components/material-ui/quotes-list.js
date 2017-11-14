@@ -3,7 +3,6 @@ import { List, ListItem } from 'material-ui/List';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const QuotesList = ({ quotes }) => {
-  console.log('>>> QuotesList: ', quotes);
   return (
     <MuiThemeProvider>
       <List>
